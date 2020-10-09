@@ -1,8 +1,8 @@
 window.onload = () => {
 swal("Bienvenido!!!!", "Espero disfrute el contenido.");
+var formulario  = document.getElementById('login');
+formulario.addEventListener('submit', (e) =>{
+  swal("Bienvenido!!!!", "Se inicio sesion.");
+  e.preventDefault();
+});
 }
-$("#form-registro").on("submit",function(event){
-    event.preventDefault();
-    swal("Good job!", "Has creado tu cuenta con exito", "success");
-    document.getElementById("form-registro").reset();
- });
