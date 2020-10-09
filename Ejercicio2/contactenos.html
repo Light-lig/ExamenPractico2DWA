@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="./js/app.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Document</title>
@@ -19,10 +19,10 @@
       <a class="navbar-brand" href="#">
       <img class="rounded-circle" src="./imagenes/svg.jpg" width="30" height="30" alt="" loading="lazy">
     </a>
-      <a class="p-2 bd-highlight text-info" href="#">Home</a>
-      <a class="p-2 bd-highlight text-secondary" href="#">Galeria</a>
+      <a class="p-2 bd-highlight text-info" href="index.html">Home</a>
+      <a class="p-2 bd-highlight text-secondary" href="galeria.html">Galeria</a>
       <a class="p-2 bd-highlight text-secondary" href="#">Servicios</a>
-      <a class="p-2 bd-highlight text-secondary" href="#">Contacto</a>
+      <a class="p-2 bd-highlight text-secondary" href="contactenos.html">Contacto</a>
     </div>
   </div>
 
@@ -31,41 +31,41 @@
       <div class="col-12 col-md-10 offset-1">
         <h3>Contactenos</h3>
         <div class="card" style="border:2px">
-          <form  method="post">
+          <form id="form-registro">
             <div class="row">
               <div class="col-12 col-md-6">
               <div class="form-group">
                   <label for="nombres">Nombre:</label>
-                  <input type="text" class="form-control" id="nombres" placeholder="Nombre">
+                  <input type="text" class="form-control" id="nombres" placeholder="Nombre" required>
               </div>
               </div>
               <div class="col-12 col-md-6">
               <div class="form-group">
                   <label for="apellidos">Apellidos:</label>
-                  <input type="email" class="form-control" id="apellidos"  placeholder="Apellidos">
+                  <input type="text" class="form-control" id="apellidos"  placeholder="Apellidos" required>
               </div>
               </div>
               <div class="col-12 col-md-6">
               <div class="form-group">
                 <label for="correo">Correo Electronico</label>
-                <input type="email" class="form-control" id="correo"  placeholder="Correo Electronico ">
+                <input type="email" class="form-control" id="correo"  placeholder="Correo Electronico " required>
               </div>
               </div>
               <div class="col-12 col-md-6">
                 <label for="">Genero:</label><br>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="M">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="M" required>
                   <label class="form-check-label" for="inlineRadio1">Masculino</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="F">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="F" required>
                   <label class="form-check-label" for="inlineRadio2">Femenino</label>
                 </div>
               </div>
               <div class="col-12 col-md-6">
                 <div class="form-group">
-                   <label for="exampleFormControlSelect1">Nivel Escolaridad</label>
-                   <select class="form-control" id="exampleFormControlSelect1">
+                   <label for="exampleFormControlSelect1">Nivel Escolaridad</label >
+                   <select class="form-control" id="exampleFormControlSelect1" required>
                      <option>hasta noveno</option>
                      <option>Bachiller</option>
                      <option>Universitario</option>
@@ -96,8 +96,12 @@
               <div class="col-12 col-md-12">
                 <label for="">Comentarios</label>
                 <div class="md-form">
-                  <textarea id="form7" class="md-textarea form-control" rows="3"></textarea>
+                  <textarea id="form7" class="md-textarea form-control" rows="3" required></textarea>
                 </div>
+              </div>
+              <div class="col-12 col-md-12 my-4">
+                <button  type="submit" id="btn-enviar"  class="btn btn-primary">Registrarme</button>
+                <button type="reset" class="btn btn-danger">Cancelar</button>
               </div>
             </div>
           </form>
@@ -127,5 +131,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="js/apps.js"></script>
 </body>
 </html>
